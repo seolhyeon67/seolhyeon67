@@ -52,7 +52,7 @@
         }
         #icon_box {
             width: 1240px;
-            padding: 10px 60px 0px 60px;
+            padding: 10px 60px 10px 60px;
             overflow: hidden;
         }
         div p {
@@ -69,15 +69,21 @@
             margin: 0 auto;
             background-color: rgb(233, 233, 233);
         }
-        div.chefs {
+        div.chefss {
             width: 771px;
             height: 304px;
             margin: 0 auto;
-        }
-        title {
-            width: 500px;
-            margin: 0 auto;
             overflow: hidden;
+        }
+        div.title {
+            float: left;
+            width: 500px;
+            font-size: small;
+        }
+        div.p {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -106,7 +112,7 @@
         <p><img src="./img/icon4.png"><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididiunt ut labore et dolore magna aliqua</p>
     </div>
     <div id="chefs">
-        <div class="chefs"><title>Title<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididiunt ut labore et dolore magna aliqua</title><img src="./img/chef.png"></div>
+        <div class="chefss"><div class="title"><div class="p">Title</div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididiunt ut labore et dolore magna aliqua</div><img src="./img/chef.png"></div>
     </div>
 </body>
 </html>
