@@ -20,41 +20,124 @@
             display: block;
             overflow: hidden;
         }
-        top p {
-            margin: 0px;
+        top p:nth-child(1) {
+            margin: 0 auto;
             float: left;
+            background-image: url(../img/chef_about.png);
+            width: 750px;
+            height: 500px;
+            overflow: hidden;
         }
         top p:nth-child(2) {
+            margin: 0 auto;
+            float: left;
+            background-image: url(../img/right1.png);
             width: 250px;
             height: 250px;
         }
         top p:nth-child(3) {
+            margin: 0 auto;
+            float: left;
+            background-image: url(../img/right2.png);
             width: 250px;
             height: 250px;
         }
-        top.top_box {
+        div.top_box {
+            float: inline-start;
+            margin-top: -250px;
             background-color: rgb(36, 128, 36, 0.7);
             width: 210px; height: 210px;
             padding: 20px;
-            position: absolute;
-            margin-top: 250px;
         }
-        top div {
+        div div {
             font-size: larger;
             font-weight: bold;
             padding-bottom: 20px;
+        }
+        box_all {
+            display: block;
+            background-color: aqua;
+            margin: 0 auto;
+            width: 1000px; height: 500px;
+            overflow: hidden;
+        }
+        box_all.box_left {
+            width: 750px;
+            float: left;
+        }
+        div.box {
+            width: 210px; height: 210px;
+            padding: 20px;
+            float: left;
+            background-color: gray;
+        }
+        div.box b {
+            display: block;
+            font-size: large;
+        }
+        div.box:nth-child(2n) {
+            background-color: rgb(233, 102, 55);
+        }
+        box_all.box_right {
+            width: 210px;
+            height: 500px;
+            padding: 20px;
+            float: left;
+            background-color: rgb(221, 220, 220);
+        }
+        footer {
+            display: block;
+            background-color: aqua;
+            width: 750px; height: 40px;
+            background-color: rgb(231, 128, 128);
+            padding-right: 240px;
+            padding-left: 10px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        footer.p {
+            display: block;
+            float: left;
+            width: auto;
+            padding: 10px;
+            height: 20px;
+        }
+        footer fb {
+            line-height: 35px;
+            color: orange;
+            float: left;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <top>
-        <p><img src="../img/chef_about.png"></p>
-        <p><img src="../img/right1.png"></p>
-        <p><img src="../img/right2.png"></p>
-        <top class="top_box">
+        <p></p>
+        <p></p>
+        <p></p>
+        <div class="top_box">
             <div>GLOBAL<br>BUSINESS</div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididiunt ut labore et dolore magna aliqua
-        </top>
+        </div>
     </top>
+    <box_all>
+        <box_all class="box_left">
+            <div class="box"><b>Title</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididiunt ut labore et dolore magna aliqua</div>
+            <div class="box"><b>Title</b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididiunt ut labore et dolore magna aliqua</div>
+            <div class="box"><b>3</b></div>
+            <div class="box"><b>4</b></div>
+            <div class="box"><b>5</b></div>
+            <div class="box"><b>6</b></div>
+        </box_all>
+        <box_all class="box_right"><b>7</b></box_all>
+    </box_all>
+    <footer>
+        <footer class="p">법적고지</footer><fb>|</fb>
+        <footer class="p">이메일무단수집거부</footer><fb>|</fb>
+        <footer class="p">이용약관</footer><fb>|</fb>
+        <footer class="p">개인정보취급방침</footer><fb>|</fb>
+        <footer class="p">고객센터</footer><fb>|</fb>
+        <footer class="p">입찰공고</footer>
+    </footer>
 </body>
 </html>
